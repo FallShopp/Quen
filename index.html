@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Up Games & Voucher Murah</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa; /* Latar belakang lebih terang */
+      margin: 0;
+    }
+    header {
+      background: #007bff; /* Warna biru yang umum di Tokogame */
+      padding: 20px; /* Padding lebih besar */
+      color: #fff;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px; /* Ukuran font lebih besar */
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Jarak antar item navigasi */
+      background: #fff;
+      padding: 15px 0; /* Padding lebih besar */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px; /* Border-radius untuk navigasi */
+      margin-bottom: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    nav a:hover {
+      background: #e9ecef;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    .banner {
+      background: #28a745; /* Warna hijau yang menarik */
+      color: #fff;
+      padding: 40px; /* Padding lebih besar */
+      border-radius: 10px; /* Border-radius lebih besar */
+      text-align: center;
+      font-size: 24px; /* Ukuran font lebih besar */
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Ukuran item grid lebih besar */
+      gap: 20px; /* Jarak antar item grid */
+    }
+    .item {
+      background: #fff;
+      padding: 20px; /* Padding lebih besar */
+      border-radius: 10px; /* Border-radius lebih besar */
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+    .item:hover {
+      transform: translateY(-5px);
+    }
+    .item img {
+      width: 100px; /* Ukuran gambar lebih besar */
+      height: 100px; /* Ukuran gambar lebih besar */
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+    .item p {
+      margin: 0;
+      font-size: 16px; /* Ukuran font lebih besar */
+      font-weight: bold;
+      color: #333;
+    }
+    form {
+      background: #fff;
+      padding: 30px; /* Padding lebih besar */
+      border-radius: 10px; /* Border-radius lebih besar */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+    form h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+    form label {
+      display: block;
+      margin: 15px 0 8px; /* Margin lebih besar */
+      font-weight: bold;
+      color: #555;
+    }
+    form input,
+    form select,
+    form button {
+      width: 100%;
+      padding: 12px; /* Padding lebih besar */
+      border-radius: 8px; /* Border-radius lebih besar */
+      border: 1px solid #ced4da;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    form button {
+      background: #007bff; /* Warna biru untuk tombol */
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 18px; /* Ukuran font lebih besar */
+      font-weight: bold;
+      padding: 12px; /* Padding lebih besar */
+      border-radius: 8px; /* Border-radius lebih besar */
+      transition: background 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk efek hover */
+    }
+    form button:hover {
+      background: #0056b3; /* Warna lebih gelap saat hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+    }
+    #statusResult {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      display: none;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 15px;
+      color: #777;
+      background: #f0f2f5;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Top Up Game & Voucher Murah, Aman, Cepat</h1>
+  </header>
+
+  <nav>
+    <a href="#topup">Top Up Game</a>
+    <a href="#voucher">Voucher</a>
+    <a href="#pulsa">Pulsa & E-Money</a>
+    <a href="#status">Cek Status</a>
+    <a href="#">Bantuan</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="banner">
+      Top Up Game Favoritmu Sekarang! Proses Cepat & Aman 24 Jam Online!
+    </div>
+
+    <section id="topup">
+      <form id="topupForm">
+        <h2>Form Top Up Game</h2>
+        <label for="game">Game</label>
+        <input type="text" id="game" placeholder="Contoh: Mobile Legends" required />
+        <label for="userid">User ID</label>
+        <input type="text" id="userid" placeholder="Masukkan User ID Anda" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="email@domain.com" required />
+        <label>Nominal (Rp)</label>
+        <select id="amount" required>
+          <option value="10000">10.000</option>
+          <option value="20000">20.000</option>
+          <option value="50000">50.000</option>
+          <option value="100000">100.000</option>
+          <option value="250000">250.000</option>
+          <option value="500000">500.000</option>
+        </select>
+        <button type="submit">Lanjut ke QRIS</button>
+      </form>
+    </section>
+
+    <section id="voucher">
+      <h2>Voucher Populer</h2>
+      <div class="grid">
+        <div class="item"><img src="https://via.placeholder.com/100" alt="Google Play"><p>Google Play</p></div>
+        <div class="item"><img src="https://via.placeholder.com/100" alt="Steam Wallet"><p>Steam Wallet</p></div>
+        <div class="item"><img src="https://via.placeholder.com/100" alt="FF Diamonds"><p>FF Diamonds</p></div>
+        <div class="item"><img src="https://via.placeholder.com/100" alt="MLBB Diamonds"><p>MLBB Diamonds</p></div>
+        <div class="item"><img src="https://via.placeholder.com/100" alt="PUBG Mobile UC"><p>PUBG Mobile UC</p></div>
+        <div class="item"><img src="https://via.placeholder.com/100" alt="Valorant Points"><p>Valorant Points</p></div>
+      </div>
+    </section>
+
+    <section id="pulsa">
+      <h2>Pulsa & E-Money</h2>
+      <div class="grid">
+        <div class="item"><img src="https://via.placeholder.com/100" alt="Telkomsel"><p>Telkomsel</p></div>
+        <div class="item"><img src="https://via.placeholder.com/100" alt="XL"><p>XL</p></div>
+        <div class="item"><img src="https://via.placeholder.com/100" alt="DANA"><p>DANA</p></div>
+        <div class="item"><img src="https://via.placeholder.com/100" alt="GoPay"><p>GoPay</p></div>
+        <div class="item"><img src="https://via.placeholder.com/100" alt="OVO"><p>OVO</p></div>
+        <div class="item"><img src="https://via.placeholder.com/100" alt="LinkAja"><p>LinkAja</p></div>
+      </div>
+    </section>
+
+    <section id="status">
+      <h2>Cek Status Pesanan</h2>
+      <form id="statusForm">
+        <label for="checkId">User ID Game / Nomor Pesanan</label>
+        <input type="text" id="checkId" required placeholder="Masukkan ID atau Nomor Pesanan Anda" />
+        <button type="submit">Cek Status</button>
+      </form>
+      <div id="statusResult"></div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Tokogame Clone - All Rights Reserved
+  </footer>
+
+  <script>
+    document.getElementById('topupForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const game = document.getElementById('game').value;
+      const userid = document.getElementById('userid').value;
+      const email = document.getElementById('email').value;
+      const amount = document.getElementById('amount').value;
+      const saweriaUsername = "FallShop"; // Pastikan ini tidak diubah
+
+      const form = document.createElement('form');
+      form.method = 'POST';
+      form.action = `https://saweria.co/donate/${saweriaUsername}`;
+      const msg = `Top Up ${game} | ID:${userid} | ${email}`;
+      ['name', 'email', 'message', 'amount'].forEach((key, i) => {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = i === 0 ? `TopUp-${userid}` : i === 1 ? email : i === 2 ? msg : amount;
+        form.appendChild(input);
+      });
+      document.body.appendChild(form);
+      form.submit();
+    });
+
+    document.getElementById('statusForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const id = document.getElementById('checkId').value;
+      const d = document.getElementById('statusResult');
+      d.style.display = 'block';
+      d.innerHTML = `<strong>ID ${id}</strong>: Pesanan sedang diproses.`;
+    });
+  </script>
+
+</body>
+  </html>
+          
